@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-effect">
+            <!-- screen -->
+            <input type="number" class="screen" id="screen" placeholder="0" >
+            <!-- numbers and operands -->
+            <section class="buttons">
+                <div class="rows">
+                    <div class="rows">
+                        <div class="row">
+                            <button class="button" id="seven" onclick="userInputValue(7)">7</button>
+                            <button class="button" id="eight" onclick="userInputValue(8)">8</button>
+                            <button class="button" id="nine" onclick="userInputValue(9)">9</button>
+                        </div>
+                        <div class="row">
+                            <button class="button" id="six" onclick="userInputValue(6)">6</button>
+                            <button class="button" id="five" onclick="userInputValue(5)">5</button>
+                            <button class="button" id="four" onclick="userInputValue(4)">4</button>
+                        </div>
+                        <div class="row">
+                            <button class="button" id="three" onclick="userInputValue(3)">3</button>
+                            <button class="button" id="two" onclick="userInputValue(2)">2</button>
+                            <button class="button" id="one" onclick="userInputValue(1)">1</button>
+                        </div>
+                        <div class="row">
+                            <button class="button" id="zero" onclick="userInputValue(0)">0</button>
+                            <button class="button clear" id="reset" onclick="clearDisplay()">Clear</button>
+                            <button class="button" id="equals" onclick="calculate()">=</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="rows">
+                        <button class="button" id="add" onclick="userInputValue('+')">➕</button>
+                        <button class="button" id="subtract" onclick="userInputValue('-')">➖</button>
+                        <button class="button" id="multiply" onclick="userInputValue('*')">✖️</button>
+                        <button class="button" id="divide" onclick="userInputValue('/')">➗</button>
+                    </div>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer class="design">Coded by Gman</footer>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
